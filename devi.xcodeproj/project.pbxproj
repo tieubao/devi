@@ -19,7 +19,6 @@
 		9BCA8D441C742FB200CE22D9 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCA8D431C742FB200CE22D9 /* UIColorExtension.swift */; };
 		9BCA8D461C743D4D00CE22D9 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCA8D451C743D4D00CE22D9 /* Constant.swift */; };
 		9BCA8D481C746C5100CE22D9 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCA8D471C746C5100CE22D9 /* StringExtension.swift */; };
-		9BCA8D4A1C74780500CE22D9 /* 01.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BCA8D491C74780500CE22D9 /* 01.png */; };
 		9BCA8D4C1C74B2CF00CE22D9 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 9BCA8D4B1C74B2CF00CE22D9 /* README.md */; };
 		9BCA8D4F1C74BE5000CE22D9 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCA8D4E1C74BE5000CE22D9 /* CustomButton.swift */; };
 		9BCA8D511C74C7E300CE22D9 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCA8D501C74C7E300CE22D9 /* RoundedButton.swift */; };
@@ -27,6 +26,7 @@
 		9BCA8D571C75022D00CE22D9 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 9BCA8D561C75022D00CE22D9 /* Podfile */; };
 		9BCA8D591C75036600CE22D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCA8D581C75036600CE22D9 /* ViewController.swift */; };
 		9BCA8D5B1C7506A300CE22D9 /* DefaultsKeysExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCA8D5A1C7506A300CE22D9 /* DefaultsKeysExtension.swift */; };
+		9BCA8D5D1C75163600CE22D9 /* devi.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9BCA8D5C1C75163600CE22D9 /* devi.gif */; };
 		C08866989975C959C8130880 /* Pods_devi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49295ACE6D2BC7869F4FE411 /* Pods_devi.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,7 +69,6 @@
 		9BCA8D431C742FB200CE22D9 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		9BCA8D451C743D4D00CE22D9 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		9BCA8D471C746C5100CE22D9 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
-		9BCA8D491C74780500CE22D9 /* 01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 01.png; sourceTree = "<group>"; };
 		9BCA8D4B1C74B2CF00CE22D9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9BCA8D4E1C74BE5000CE22D9 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		9BCA8D501C74C7E300CE22D9 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
@@ -77,6 +76,7 @@
 		9BCA8D561C75022D00CE22D9 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		9BCA8D581C75036600CE22D9 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9BCA8D5A1C7506A300CE22D9 /* DefaultsKeysExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultsKeysExtension.swift; sourceTree = "<group>"; };
+		9BCA8D5C1C75163600CE22D9 /* devi.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = devi.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,9 +117,9 @@
 				9B9891161C738BCA00326EA2 /* .gitattributes */,
 				9B9891171C738BCA00326EA2 /* .gitignore */,
 				9B9891181C738BCA00326EA2 /* .swiftlint.yml */,
-				9BCA8D491C74780500CE22D9 /* 01.png */,
 				9BCA8D561C75022D00CE22D9 /* Podfile */,
 				9BCA8D4B1C74B2CF00CE22D9 /* README.md */,
+				9BCA8D5C1C75163600CE22D9 /* devi.gif */,
 			);
 			sourceTree = "<group>";
 		};
@@ -177,9 +177,9 @@
 			isa = PBXGroup;
 			children = (
 				9BCA8D451C743D4D00CE22D9 /* Constant.swift */,
+				9BCA8D5A1C7506A300CE22D9 /* DefaultsKeysExtension.swift */,
 				9BCA8D471C746C5100CE22D9 /* StringExtension.swift */,
 				9BCA8D431C742FB200CE22D9 /* UIColorExtension.swift */,
-				9BCA8D5A1C7506A300CE22D9 /* DefaultsKeysExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -320,10 +320,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BCA8D4A1C74780500CE22D9 /* 01.png in Resources */,
 				9B98911B1C738BCB00326EA2 /* .swiftlint.yml in Resources */,
 				9B98911A1C738BCB00326EA2 /* .gitignore in Resources */,
 				9B9890ED1C730BC300326EA2 /* Assets.xcassets in Resources */,
+				9BCA8D5D1C75163600CE22D9 /* devi.gif in Resources */,
 				9B9890EB1C730BC300326EA2 /* Main.storyboard in Resources */,
 				9BCA8D571C75022D00CE22D9 /* Podfile in Resources */,
 				9B9891191C738BCA00326EA2 /* .gitattributes in Resources */,

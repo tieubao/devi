@@ -4,7 +4,7 @@
 
 Submitted by: **Han Ngo**
 
-Time spent: **X** hours spent in total
+Time spent: **24** hours spent in total
 
 ## User Stories
 
@@ -27,7 +27,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-[![Video Walkthrough](https://raw.githubusercontent.com/tieubao/devi/master/01.png)](/01.png)
+[![Video Walkthrough](https://raw.githubusercontent.com/tieubao/devi/master/devi.gif)](/devi.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
