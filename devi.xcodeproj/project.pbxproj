@@ -21,6 +21,7 @@
 		9BCA8D461C743D4D00CE22D9 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCA8D451C743D4D00CE22D9 /* Constant.swift */; };
 		9BCA8D481C746C5100CE22D9 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCA8D471C746C5100CE22D9 /* StringExtension.swift */; };
 		9BCA8D4A1C74780500CE22D9 /* 01.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BCA8D491C74780500CE22D9 /* 01.png */; };
+		9BCA8D4C1C74B2CF00CE22D9 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 9BCA8D4B1C74B2CF00CE22D9 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		9BCA8D451C743D4D00CE22D9 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		9BCA8D471C746C5100CE22D9 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		9BCA8D491C74780500CE22D9 /* 01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 01.png; sourceTree = "<group>"; };
+		9BCA8D4B1C74B2CF00CE22D9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				9B9891171C738BCA00326EA2 /* .gitignore */,
 				9B9891181C738BCA00326EA2 /* .swiftlint.yml */,
 				9BCA8D491C74780500CE22D9 /* 01.png */,
+				9BCA8D4B1C74B2CF00CE22D9 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -317,6 +320,7 @@
 				9B9890E81C730BC300326EA2 /* ViewController.swift in Sources */,
 				9B9890E61C730BC300326EA2 /* AppDelegate.swift in Sources */,
 				9BCA8D481C746C5100CE22D9 /* StringExtension.swift in Sources */,
+				9BCA8D4C1C74B2CF00CE22D9 /* README.md in Sources */,
 				9BCA8D461C743D4D00CE22D9 /* Constant.swift in Sources */,
 				9BCA8D421C742A9400CE22D9 /* NumericKeypadView.swift in Sources */,
 				9BCA8D441C742FB200CE22D9 /* UIColorExtension.swift in Sources */,
