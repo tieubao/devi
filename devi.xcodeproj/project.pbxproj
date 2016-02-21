@@ -27,6 +27,7 @@
 		9BCA8D591C75036600CE22D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCA8D581C75036600CE22D9 /* ViewController.swift */; };
 		9BCA8D5B1C7506A300CE22D9 /* DefaultsKeysExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCA8D5A1C7506A300CE22D9 /* DefaultsKeysExtension.swift */; };
 		9BCA8D5D1C75163600CE22D9 /* devi.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9BCA8D5C1C75163600CE22D9 /* devi.gif */; };
+		9BCA8D5F1C7521D700CE22D9 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCA8D5E1C7521D700CE22D9 /* SettingViewController.swift */; };
 		C08866989975C959C8130880 /* Pods_devi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49295ACE6D2BC7869F4FE411 /* Pods_devi.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +78,7 @@
 		9BCA8D581C75036600CE22D9 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9BCA8D5A1C7506A300CE22D9 /* DefaultsKeysExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultsKeysExtension.swift; sourceTree = "<group>"; };
 		9BCA8D5C1C75163600CE22D9 /* devi.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = devi.gif; sourceTree = "<group>"; };
+		9BCA8D5E1C7521D700CE22D9 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingViewController.swift; path = ../SettingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				9BCA8D581C75036600CE22D9 /* ViewController.swift */,
+				9BCA8D5E1C7521D700CE22D9 /* SettingViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -424,6 +427,7 @@
 				9BCA8D531C74C81200CE22D9 /* SquareBorderButton.swift in Sources */,
 				9BCA8D441C742FB200CE22D9 /* UIColorExtension.swift in Sources */,
 				9BCA8D5B1C7506A300CE22D9 /* DefaultsKeysExtension.swift in Sources */,
+				9BCA8D5F1C7521D700CE22D9 /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

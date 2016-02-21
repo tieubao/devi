@@ -1,6 +1,6 @@
-# Pre-work - *DEVI Tipper*
+# Pre-work - *Devi Tipster*
 
-**Devi** is a tip calculator application for iOS.
+**Devi Tipster** is a tip calculator application for iOS.
 
 Submitted by: **Han Ngo**
 

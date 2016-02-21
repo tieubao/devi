@@ -6,6 +6,92 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Setting View Controller-->
+        <scene sceneID="HD4-22-9TM">
+            <objects>
+                <tableViewController id="hrg-kq-eta" userLabel="Setting View Controller" customClass="SettingViewController" customModule="devi" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="715-wx-W5e">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="qw6-kn-iFc">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qw6-kn-iFc" id="u8B-HJ-Ea6">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="nW1-T0-ubt">
+                                            <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
+                                            <variation key="widthClass=compact" fixedFrame="YES">
+                                                <rect key="frame" x="205" y="13" width="118" height="31"/>
+                                            </variation>
+                                        </slider>
+                                    </subviews>
+                                    <variation key="default">
+                                        <mask key="subviews">
+                                            <exclude reference="nW1-T0-ubt"/>
+                                        </mask>
+                                    </variation>
+                                    <variation key="widthClass=compact">
+                                        <mask key="subviews">
+                                            <include reference="nW1-T0-ubt"/>
+                                        </mask>
+                                    </variation>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Vjf-gZ-mnd">
+                                <rect key="frame" x="0.0" y="136" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Vjf-gZ-mnd" id="FF9-wQ-zoL">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="hrg-kq-eta" id="yLf-aD-WB5"/>
+                            <outlet property="delegate" destination="hrg-kq-eta" id="gXv-jL-a6f"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems>
+                        <barButtonItem title="Done" id="3O6-WP-WAT">
+                            <connections>
+                                <action selector="dismissAction:" destination="hrg-kq-eta" id="Vbv-xv-MSC"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="Setting" id="9NF-i8-3wz">
+                        <connections>
+                            <outlet property="rightBarButtonItem" destination="3O6-WP-WAT" id="USL-iQ-abI"/>
+                        </connections>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="settingTableView" destination="715-wx-W5e" id="Ri8-Nb-Ol7"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qu3-Rr-sf4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1383" y="-199"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="f7r-3p-DyA">
+            <objects>
+                <navigationController id="tqM-Ad-mGk" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mqx-Zz-BDW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="hrg-kq-eta" kind="relationship" relationship="rootViewController" id="qCw-Gf-o94"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MMl-ug-aLz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="528" y="-199"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -39,6 +125,9 @@
                                         <state key="normal" title="i">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="tqM-Ad-mGk" kind="show" id="W6t-8e-S8s"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.12941176470588237" green="0.12549019607843137" blue="0.16862745098039217" alpha="1" colorSpace="calibratedRGB"/>
@@ -131,7 +220,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ph0-B8-e5O" userLabel="Bill Value">
                                                 <rect key="frame" x="130" y="40" width="340" height="44"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="32"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5au-RJ-ttj">
@@ -142,7 +231,7 @@
                                                         <accessibility key="accessibilityConfiguration" label="Tip Up"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="36" id="bvz-vR-fAu">
-                                                                <variation key="widthClass=compact" constant="45"/>
+                                                                <variation key="widthClass=compact" constant="46"/>
                                                             </constraint>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -158,7 +247,7 @@
                                                         <accessibility key="accessibilityConfiguration" label="Tip Down"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="36" id="yQW-Ky-6Em">
-                                                                <variation key="widthClass=compact" constant="45"/>
+                                                                <variation key="widthClass=compact" constant="46"/>
                                                             </constraint>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -225,7 +314,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YZb-eT-7wC">
                                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPg-Na-sAj" userLabel="Info Button" customClass="SquareBorderButton" customModule="devi" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPg-Na-sAj" userLabel="People Up Button" customClass="SquareBorderButton" customModule="devi" customModuleProvider="target">
                                                         <rect key="frame" x="36" y="14" width="36" height="36"/>
                                                         <accessibility key="accessibilityConfiguration" label="People Up"/>
                                                         <constraints>
@@ -241,7 +330,7 @@
                                                             <action selector="peopleUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Ox-zh-f0T"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EIL-ct-sod" userLabel="Info Button" customClass="SquareBorderButton" customModule="devi" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EIL-ct-sod" userLabel="People Down Button" customClass="SquareBorderButton" customModule="devi" customModuleProvider="target">
                                                         <rect key="frame" x="36" y="14" width="36" height="36"/>
                                                         <accessibility key="accessibilityConfiguration" label="People Down"/>
                                                         <constraints>
@@ -588,7 +677,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="562.5" y="467"/>
+            <point key="canvasLocation" x="528" y="601"/>
         </scene>
     </scenes>
 </document>

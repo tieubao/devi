@@ -11,9 +11,11 @@ import UIKit
 
 // A round button used to draw the Info button
 class RoundedButton: CustomButton {
+
     var normalFillColor = UIColor.darkTextColor()
     var highlightedFillColor = UIColor.blueColor()
     var disabledFillColor = UIColor.lightGrayColor()
+
     var offsetX: CGFloat = 0
     var offsetY: CGFloat = 0
 

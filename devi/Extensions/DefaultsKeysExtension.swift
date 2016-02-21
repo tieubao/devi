@@ -13,4 +13,5 @@ extension DefaultsKeys {
     static let billAmountKey = DefaultsKey<String>("billAmount")
     static let peopleKey = DefaultsKey<Int>("people")
     static let rateKey = DefaultsKey<Double>("rate")
+    static let dotButtonPressed = DefaultsKey<Bool>("dotButtonPressed")
 }
