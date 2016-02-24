@@ -27,7 +27,7 @@ class ViewController: UIViewController, NumericKeypadDelegate {
     @IBOutlet var peopleUpButton: SquareBorderButton!
     @IBOutlet var peopleDownButton: SquareBorderButton!
     
-    //
+    // This is a string to show up in the calculator
     var keypadString = ""
     
     var tipAmount: Float = 0.0
@@ -55,7 +55,7 @@ class ViewController: UIViewController, NumericKeypadDelegate {
         // Set tip rate default value to 0.1
         tipRate = Float(Defaults[DefaultsKeys.rateKey])
         if tipRate < 0.1 {
-            tipRate = 0.1
+            tipRate = Float(Defaults[DefaultsKeys.defaultRateKey]) / 100
         }
         
         // Make sure min People always >= 1
@@ -116,6 +116,9 @@ class ViewController: UIViewController, NumericKeypadDelegate {
         }
     }
     
+    /**
+     This function will be triggered when users make some input
+     */
     func updateViews() {
         
         // Update bill amount

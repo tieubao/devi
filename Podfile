@@ -5,13 +5,14 @@ use_frameworks!
 
 target 'devi' do
     pod 'SwiftyUserDefaults'
+    pod 'XCGLogger'
 end
 
 target 'deviTests' do
-
+    
 end
 
 target 'deviUITests' do
-
+    
 end
 

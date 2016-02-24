@@ -10,8 +10,11 @@ import Foundation
 import SwiftyUserDefaults
 
 extension DefaultsKeys {
+    
     static let billAmountKey = DefaultsKey<String>("billAmount")
     static let peopleKey = DefaultsKey<Int>("people")
     static let rateKey = DefaultsKey<Double>("rate")
+    static let defaultRateKey = DefaultsKey<Double>("defaultRate")
     static let dotButtonPressed = DefaultsKey<Bool>("dotButtonPressed")
+    
 }

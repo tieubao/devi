@@ -28,6 +28,7 @@
 		9BCA8D5B1C7506A300CE22D9 /* DefaultsKeysExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCA8D5A1C7506A300CE22D9 /* DefaultsKeysExtension.swift */; };
 		9BCA8D5D1C75163600CE22D9 /* devi.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9BCA8D5C1C75163600CE22D9 /* devi.gif */; };
 		9BCA8D5F1C7521D700CE22D9 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCA8D5E1C7521D700CE22D9 /* SettingViewController.swift */; };
+		9BE7DD271C7E4A8C00D5D853 /* TipRateSliderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE7DD261C7E4A8C00D5D853 /* TipRateSliderCell.swift */; };
 		C08866989975C959C8130880 /* Pods_devi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49295ACE6D2BC7869F4FE411 /* Pods_devi.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,11 +75,12 @@
 		9BCA8D4E1C74BE5000CE22D9 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		9BCA8D501C74C7E300CE22D9 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		9BCA8D521C74C81200CE22D9 /* SquareBorderButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquareBorderButton.swift; sourceTree = "<group>"; };
-		9BCA8D561C75022D00CE22D9 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		9BCA8D561C75022D00CE22D9 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9BCA8D581C75036600CE22D9 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9BCA8D5A1C7506A300CE22D9 /* DefaultsKeysExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultsKeysExtension.swift; sourceTree = "<group>"; };
 		9BCA8D5C1C75163600CE22D9 /* devi.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = devi.gif; sourceTree = "<group>"; };
-		9BCA8D5E1C7521D700CE22D9 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingViewController.swift; path = ../SettingViewController.swift; sourceTree = "<group>"; };
+		9BCA8D5E1C7521D700CE22D9 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		9BE7DD261C7E4A8C00D5D853 /* TipRateSliderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipRateSliderCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,8 +172,8 @@
 		9B9891131C73260C00326EA2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				9BCA8D581C75036600CE22D9 /* ViewController.swift */,
 				9BCA8D5E1C7521D700CE22D9 /* SettingViewController.swift */,
+				9BCA8D581C75036600CE22D9 /* ViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -190,12 +192,21 @@
 		9BCA8D4D1C74BE0C00CE22D9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9BE7DD251C7E4A7C00D5D853 /* Cell */,
 				9BCA8D4E1C74BE5000CE22D9 /* CustomButton.swift */,
 				9BCA8D411C742A9300CE22D9 /* NumericKeypadView.swift */,
 				9BCA8D501C74C7E300CE22D9 /* RoundedButton.swift */,
 				9BCA8D521C74C81200CE22D9 /* SquareBorderButton.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		9BE7DD251C7E4A7C00D5D853 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				9BE7DD261C7E4A8C00D5D853 /* TipRateSliderCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		BE9357C962200925FF288665 /* Frameworks */ = {
@@ -424,6 +435,7 @@
 				9BCA8D461C743D4D00CE22D9 /* Constant.swift in Sources */,
 				9BCA8D4F1C74BE5000CE22D9 /* CustomButton.swift in Sources */,
 				9BCA8D421C742A9400CE22D9 /* NumericKeypadView.swift in Sources */,
+				9BE7DD271C7E4A8C00D5D853 /* TipRateSliderCell.swift in Sources */,
 				9BCA8D531C74C81200CE22D9 /* SquareBorderButton.swift in Sources */,
 				9BCA8D441C742FB200CE22D9 /* UIColorExtension.swift in Sources */,
 				9BCA8D5B1C7506A300CE22D9 /* DefaultsKeysExtension.swift in Sources */,
