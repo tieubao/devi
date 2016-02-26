@@ -40,8 +40,14 @@ class ViewController: UIViewController, NumericKeypadDelegate {
     
     var dotButtonPressed: Bool = false
     
+    func willEnterForground() {
+        clearTapped()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "willEnterForground", name: UIApplicationWillEnterForegroundNotification, object: nil)
         
         // Setup colors for keypad
         numericKeypadView.keypadTextColor = Constant.keypadTextColor

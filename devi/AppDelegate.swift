@@ -25,12 +25,8 @@ let log: XCGLogger = {
         .Severe: XCGLogger.XcodeColor(fg: (255, 255, 255), bg: (255, 0, 0)) // Optionally use RGB values directly
     ]
     
-    #if DEBUG
-        log.setup(.Debug, showThreadName: true, showLogLevel: true, showFileNames: true, showLineNumbers: true, writeToFile: nil)
-    #else
-        log.setup(.Severe, showThreadName: true, showLogLevel: true, showFileNames: true, showLineNumbers: true, writeToFile: nil)
-    #endif
     
+    log.setup(.Debug, showThreadName: true, showLogLevel: true, showFileNames: true, showLineNumbers: true, writeToFile: nil)
     return log
 }()
 
@@ -56,12 +52,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func applicationDidEnterBackground(application: UIApplication) {
+        
+        // save current timestamp
+        let now = NSDate().timeIntervalSince1970
+        Defaults[DefaultsKeys.lastActiveTime] = Int(now)
+        
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
     }
     
     func applicationWillEnterForeground(application: UIApplication) {
         // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+        
+        let lastTime = Defaults[DefaultsKeys.lastActiveTime]
+        let now = Int(NSDate().timeIntervalSince1970)
+        
+        if now - lastTime > 600 {
+            log.info("Back to app after 10 minutes. Need to reset tip cal values")
+            
+            // Clear NSUserDefault data
+            Defaults[DefaultsKeys.billAmountKey] = ""
+            Defaults[DefaultsKeys.peopleKey] = 1
+            Defaults[DefaultsKeys.rateKey] = 0.0
+            Defaults[DefaultsKeys.dotButtonPressed] = false
+        }
     }
     
     func applicationDidBecomeActive(application: UIApplication) {

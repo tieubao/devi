@@ -120,8 +120,11 @@ class SettingViewController: UITableViewController, TipRateSliderDelegate {
                 cell = nib[0] as? TipRateSliderCell
             }
             
+            cell?.delegate = self
+            
             // Set value for slider
             cell?.slider.value = Float(Defaults[DefaultsKeys.defaultRateKey])
+            cell?.defaultTipLabel.text = "\(Int(Defaults[DefaultsKeys.defaultRateKey]))"
             return cell!
             
         default:
@@ -130,7 +133,7 @@ class SettingViewController: UITableViewController, TipRateSliderDelegate {
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        print("You selected cell #\(indexPath.row)!")
+        log.debug("You selected cell #\(indexPath.row)!")
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
     
@@ -145,6 +148,6 @@ class SettingViewController: UITableViewController, TipRateSliderDelegate {
      */
     func sliderValueChanged(value: Int) {
         Defaults[DefaultsKeys.defaultRateKey] = Double(value)
-        log.debug("Persist default tip rate")
+        log.info("Persist default tip rate")
     }
 }

@@ -16,5 +16,5 @@ extension DefaultsKeys {
     static let rateKey = DefaultsKey<Double>("rate")
     static let defaultRateKey = DefaultsKey<Double>("defaultRate")
     static let dotButtonPressed = DefaultsKey<Bool>("dotButtonPressed")
-    
+    static let lastActiveTime = DefaultsKey<Int>("lastActiveTime")
 }

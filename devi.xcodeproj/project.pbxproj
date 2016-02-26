@@ -53,7 +53,7 @@
 		385F9FFF1094EB05E69FEBCC /* Pods-devi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-devi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-devi/Pods-devi.debug.xcconfig"; sourceTree = "<group>"; };
 		49295ACE6D2BC7869F4FE411 /* Pods_devi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_devi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88B05CDCEC46CAD58D6D59A5 /* Pods-devi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-devi.release.xcconfig"; path = "Pods/Target Support Files/Pods-devi/Pods-devi.release.xcconfig"; sourceTree = "<group>"; };
-		9B9890E21C730BC300326EA2 /* devi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = devi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B9890E21C730BC300326EA2 /* Devi Tipster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Devi Tipster.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B9890E51C730BC300326EA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B9890EA1C730BC300326EA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9B9890EC1C730BC300326EA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -130,7 +130,7 @@
 		9B9890E31C730BC300326EA2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9B9890E21C730BC300326EA2 /* devi.app */,
+				9B9890E21C730BC300326EA2 /* Devi Tipster.app */,
 				9B9890F61C730BC400326EA2 /* deviTests.xctest */,
 				9B9891011C730BC400326EA2 /* deviUITests.xctest */,
 			);
@@ -247,7 +247,7 @@
 			);
 			name = devi;
 			productName = devi;
-			productReference = 9B9890E21C730BC300326EA2 /* devi.app */;
+			productReference = 9B9890E21C730BC300326EA2 /* Devi Tipster.app */;
 			productType = "com.apple.product-type.application";
 		};
 		9B9890F51C730BC400326EA2 /* deviTests */ = {
@@ -298,6 +298,7 @@
 				TargetAttributes = {
 					9B9890E11C730BC300326EA2 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = L3SA45VTYT;
 					};
 					9B9890F51C730BC400326EA2 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -576,10 +577,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = devi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.tieubao.devi;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Devi Tipster";
 			};
 			name = Debug;
 		};
@@ -589,10 +591,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = devi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.tieubao.devi;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Devi Tipster";
 			};
 			name = Release;
 		};
