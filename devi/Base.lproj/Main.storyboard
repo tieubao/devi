@@ -10,13 +10,13 @@
         <!--Setting View Controller-->
         <scene sceneID="HD4-22-9TM">
             <objects>
-                <tableViewController id="hrg-kq-eta" userLabel="Setting View Controller" customClass="SettingViewController" customModule="devi" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="hrg-kq-eta" userLabel="Setting View Controller" customClass="SettingViewController" customModule="Devi_Tipster" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="90" sectionHeaderHeight="18" sectionFooterHeight="18" id="715-wx-W5e">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TipRateSliderCell" rowHeight="90" id="qw6-kn-iFc" customClass="TipRateSliderCell" customModule="devi" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TipRateSliderCell" rowHeight="90" id="qw6-kn-iFc" customClass="TipRateSliderCell" customModule="Devi_Tipster" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="113.5" width="600" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qw6-kn-iFc" id="u8B-HJ-Ea6">
@@ -145,7 +145,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="devi" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Devi_Tipster" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -164,7 +164,7 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xzz-AV-pTX" userLabel="Info Button" customClass="RoundedButton" customModule="devi" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xzz-AV-pTX" userLabel="Info Button" customClass="RoundedButton" customModule="Devi_Tipster" customModuleProvider="target">
                                         <rect key="frame" x="36" y="14" width="36" height="36"/>
                                         <accessibility key="accessibilityConfiguration" label="More Info"/>
                                         <constraints>
@@ -276,7 +276,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5au-RJ-ttj">
                                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PET-Pz-Qrg" userLabel="Tip Up Button" customClass="SquareBorderButton" customModule="devi" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PET-Pz-Qrg" userLabel="Tip Up Button" customClass="SquareBorderButton" customModule="Devi_Tipster" customModuleProvider="target">
                                                         <rect key="frame" x="36" y="14" width="36" height="36"/>
                                                         <accessibility key="accessibilityConfiguration" label="Tip Up"/>
                                                         <constraints>
@@ -292,7 +292,7 @@
                                                             <action selector="tipUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EKv-Zi-xM9"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W6d-1Q-Hqx" userLabel="Tip Down Button" customClass="SquareBorderButton" customModule="devi" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W6d-1Q-Hqx" userLabel="Tip Down Button" customClass="SquareBorderButton" customModule="Devi_Tipster" customModuleProvider="target">
                                                         <rect key="frame" x="36" y="14" width="36" height="36"/>
                                                         <accessibility key="accessibilityConfiguration" label="Tip Down"/>
                                                         <constraints>
@@ -364,7 +364,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YZb-eT-7wC">
                                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPg-Na-sAj" userLabel="People Up Button" customClass="SquareBorderButton" customModule="devi" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPg-Na-sAj" userLabel="People Up Button" customClass="SquareBorderButton" customModule="Devi_Tipster" customModuleProvider="target">
                                                         <rect key="frame" x="36" y="14" width="36" height="36"/>
                                                         <accessibility key="accessibilityConfiguration" label="People Up"/>
                                                         <constraints>
@@ -380,7 +380,7 @@
                                                             <action selector="peopleUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Ox-zh-f0T"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EIL-ct-sod" userLabel="People Down Button" customClass="SquareBorderButton" customModule="devi" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EIL-ct-sod" userLabel="People Down Button" customClass="SquareBorderButton" customModule="Devi_Tipster" customModuleProvider="target">
                                                         <rect key="frame" x="36" y="14" width="36" height="36"/>
                                                         <accessibility key="accessibilityConfiguration" label="People Down"/>
                                                         <constraints>
@@ -562,7 +562,6 @@
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.41176470588235292" green="0.36862745098039218" blue="0.79607843137254897" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
-                                                    <constraint firstItem="dOL-9G-nFh" firstAttribute="leading" secondItem="3VG-4K-dmb" secondAttribute="trailing" constant="8" id="06f-Dr-RFh"/>
                                                     <constraint firstAttribute="height" constant="34" id="Nan-sR-OxJ">
                                                         <variation key="widthClass=compact" constant="30"/>
                                                     </constraint>
@@ -589,7 +588,6 @@
                                                         <exclude reference="gBr-Ia-rC2"/>
                                                         <exclude reference="RQ6-ef-r5Y"/>
                                                         <exclude reference="lpZ-65-e0q"/>
-                                                        <exclude reference="06f-Dr-RFh"/>
                                                         <exclude reference="bMy-ZI-V1s"/>
                                                         <exclude reference="hdL-vH-6Aq"/>
                                                         <exclude reference="xa6-q0-YLu"/>
@@ -601,7 +599,6 @@
                                                         <include reference="gBr-Ia-rC2"/>
                                                         <include reference="RQ6-ef-r5Y"/>
                                                         <include reference="lpZ-65-e0q"/>
-                                                        <exclude reference="06f-Dr-RFh"/>
                                                         <include reference="bMy-ZI-V1s"/>
                                                         <include reference="hdL-vH-6Aq"/>
                                                         <include reference="xa6-q0-YLu"/>
@@ -675,7 +672,7 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ksg-VA-CGR" userLabel="Numberic Keypad View" customClass="NumericKeypadView" customModule="devi" customModuleProvider="target">
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ksg-VA-CGR" userLabel="Numberic Keypad View" customClass="NumericKeypadView" customModule="Devi_Tipster" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="288" width="600" height="312"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
