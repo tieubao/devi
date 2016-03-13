@@ -6,6 +6,8 @@ Submitted by: **Han Ngo**
 
 Time spent: **48** hours spent in total
 
+AppStore: https://itunes.apple.com/us/app/devi-tipster/id1088213203?ls=1&mt=8
+
 ## User Stories
 
 The following **required** functionality is complete:
